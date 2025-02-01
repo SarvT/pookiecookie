@@ -3,7 +3,7 @@ import React from "react";
 
 export const Footer = () => {
   return (
-    <footer className="w-full bg-black text-white py-12">
+    <footer className="w-full  bg-black text-white py-12">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-4">
         <div>
           <h4 className="font-bold mb-4">Company</h4>
@@ -80,7 +80,7 @@ export const Footer = () => {
       </div>
 
       <div className="container mx-auto mt-8 text-center text-gray-500 border-t pt-4 px-4">
-        © 2024 Your Company. All rights reserved.
+        © 2024 PookieCookie. All rights reserved.
       </div>
     </footer>
   );
