@@ -1,23 +1,28 @@
-import "./globals.css"
-import { Inter } from "next/font/google"
-import { ThemeProvider } from "@/app/components/theme-provider"
-import Header from "@/app/components/header"
-import type React from "react" // Added import for React
+import "./globals.css";
+import { Inter } from "next/font/google";
+import { ThemeProvider } from "@/app/components/theme-provider";
+import Header from "@/app/components/header";
+import type React from "react";
+import Head from "next/head";
 
-const inter = Inter({ subsets: ["latin"] })
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "PookieCookie",
   description: "Indulge in our delicious, handcrafted cookies",
-}
+  
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <Head>
+        <link rel="icon" type="image/png" href="/logo.png" />
+      </Head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Header />
@@ -25,6 +30,5 @@ export default function RootLayout({
         </ThemeProvider>
       </body>
     </html>
-  )
+  );
 }
-

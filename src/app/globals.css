@@ -104,7 +104,7 @@ body {
 
 a,
 button {
-  cursor: url("/images/cookie-cursor.png"), pointer;
+  cursor: url("/images/cookie-cursor.svg"), pointer;
 }
 
 /* Hover effect for interactive elements */
