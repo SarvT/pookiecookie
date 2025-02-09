@@ -99,12 +99,12 @@
 
 /* Custom cursor styles */
 body {
-  cursor: url("/cookie-cursor.svg"), auto;
+  cursor: url("/images/cookie-cursor.svg"), auto;
 }
 
 a,
 button {
-  /* cursor: url("/cookie-bite-cursor.png"), pointer; */
+  cursor: url("/images/cookie-cursor.png"), pointer;
 }
 
 /* Hover effect for interactive elements */
